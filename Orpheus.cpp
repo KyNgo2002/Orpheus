@@ -1,5 +1,13 @@
-﻿// Orpheus.cpp : Defines the entry point for the application.
-//
+﻿#include "Orpheus.h"
 
-#include "Orpheus.h"
+AudioManager::AudioManager() {
+	numSongs = 0;
+}
 
+AudioManager::~AudioManager() {
+
+}
+
+inline unsigned AudioManager::getNumSongs() {
+	return numSongs;
+}

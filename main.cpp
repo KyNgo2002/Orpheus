@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Orpheus.h"
 
 int main() {
-	std::cout << "Hello world" << std::endl;
+	AudioManager Orpheus;
+
+	std::cout << "There are " << Orpheus.getNumSongs() << " songs in the Orpheus audio manager." << std::endl;
+	
 	return 0;
 }

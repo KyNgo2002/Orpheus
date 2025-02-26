@@ -5,4 +5,16 @@
 
 #include <iostream>
 
-// TODO: Reference additional headers your program requires here.
+class AudioManager {
+private:
+	unsigned numSongs;
+public:
+	
+	// Constructor/Destructor
+	AudioManager();
+	~AudioManager();
+	
+	// Accessors
+	inline unsigned getNumSongs();
+
+};
