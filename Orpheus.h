@@ -4,6 +4,9 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
+// Remove later
+#include <string>
 
 class AudioManager {
 private:
@@ -15,6 +18,9 @@ public:
 	~AudioManager();
 	
 	// Accessors
-	inline unsigned getNumSongs();
+	unsigned getNumSongs();
+
+	// Modifiers
+	void load(const char* pathToSong);
 
 };

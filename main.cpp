@@ -4,7 +4,7 @@
 int main() {
 	AudioManager Orpheus;
 
-	std::cout << "There are " << Orpheus.getNumSongs() << " songs in the Orpheus audio manager." << std::endl;
-	
+	std::cout << "Therse are " << Orpheus.getNumSongs() << " songs in the Orpheus audio manager." << std::endl;
+	Orpheus.load("C:\\Users\\kyngo\\source\\repos\\Orpheus\\TestFile.txt");
 	return 0;
 }

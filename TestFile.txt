@@ -1,0 +1,7 @@
+This is a test file to test reading capabilities of 
+c++ file streams
+Line      With       Many      Spaces
+SingleWord
+
+Empty line followed by nonEmpty line
+Last line

@@ -1,6 +1,4 @@
-﻿# CMakeList.txt : CMake project for Orpheus, include source and define
-# project specific logic here.
-#
+﻿# CMakeList.txt : CMake project for Orpheus
 cmake_minimum_required (VERSION 3.8)
 
 # Enable Hot Reload for MSVC compilers if supported.
@@ -10,12 +8,10 @@ if (POLICY CMP0141)
 endif()
 
 project ("Orpheus")
-
-# Add source to this project's executable.
-add_executable (Orpheus "Orpheus.cpp" "Orpheus.h" "main.cpp")
+add_executable (Orpheus "main.cpp" "Orpheus.h" "Orpheus.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Orpheus PROPERTY CXX_STANDARD 20)
 endif()
 
-# TODO: Add tests and install targets if needed.
+
